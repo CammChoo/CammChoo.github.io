@@ -1,0 +1,96 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.intro-div {
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    background-color: #000000;
+}
+
+.right-intro-half1 {
+    flex: .5;
+    display: inline-block;
+}
+
+
+.left-intro {
+    display: flex;
+    flex-direction: column; /* stack items vertically */
+    justify-content: center; /* center items horizontally */
+    flex: 1;
+}
+
+.intro-name {
+    display: block;
+    margin-left: 20px;
+    font-weight: 500;
+    color: #fdfdfd;
+}
+
+.intro-name:hover {
+    transition: opacity 0.15s;
+    opacity: 0.7;
+}
+
+
+.intro-bio {
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-weight: 520;
+}
+
+.intro-bio:hover {
+    transition: opacity 0.15s;
+    opacity: 0.7;
+}
+
+.learn-resume {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: #ce8008;
+    text-decoration: none;
+}
+
+.learn-resume:hover {
+    transition: opacity 0.15s;
+    opacity: 0.7;
+}
+
+
+@media screen and (min-width: 601px) {
+    
+    .learn-resume {
+        font-size: 1vw;
+    }
+
+    .intro-name {
+        font-size: 2.4vw;
+    }
+
+    .intro-bio {
+        font-size: 2.5vw;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+
+    .learn-resume {
+        font-size: 3vw;
+    }
+
+    .intro-name {
+        font-size: 6.4vw;
+    }
+
+    .intro-bio {
+        font-size: 6.5vw;
+    }
+}
